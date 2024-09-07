@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReelFetch - Facebook reels downloader </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="#"><img src="images/icon.png" alt="ReelFetch" height="40" width="40"> ReelFetch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="policy.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="terms.html">Terms of Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="text-center">
+            <h1>ReelFetch</h1>
+            <p class="lead">Easily download your favorite Facebook reels with just a few clicks.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-title text-center">Enter Facebook Video URL</h5>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="url" placeholder="Paste the Facebook reel URL here...">
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="downloadReel()">Download</button>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            
+            <div id="success-message" class="alert alert-custom-success" role="alert" style="display:none;">
+                <h3 class="text-center mt-4">Ready for download.</h3>
+                <div class="text-center mt-4">
+                    <img src="" alt="Video Thumbnail" id='vidthumbnail'class="thumbnail">
+                </div>
+                <div class="download-buttons">
+                    
+                    <a id="vidLowQ" href="" class="btn btn-outline-primary btn-sm">Download Low Quality</a>
+                    
+                    <a id="vidHighQ" href="" class="btn btn-primary btn-sm">Download High Quality</a>
+                </div> 
+            </div>
+            
+            <div id="error-message" class="alert alert-custom-error" role="alert" style="display:none;">
+                
+            </div>
+        </div>
+
+        <div class="download-section text-center">
+            <h3>How It Works</h3>
+            <p>Simply paste the Facebook reel URL in the box above and click "Download". The video will be fetched and ready for download.</p>
+            <p><strong>Note:</strong> Ensure that you have the proper permissions to download the content.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ReelFetch Inc. | <a href="policy.html">Privacy Policy</a>| <a href="terms.html">Terms of Service</a></p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
