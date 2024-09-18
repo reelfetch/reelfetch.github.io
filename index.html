@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReelFetch - Facebook reels downloader </title>
+    <title>ReelFetch - Facebook Reels Downloader</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="/images/icon.png" type="image/png">
@@ -37,14 +37,15 @@
     </nav>
     <div class="container">
         <div class="text-center">
-            <h1>ReelFetch</h1>
-            <p class="lead">Easily download your favorite Facebook reels with just a few clicks.</p>
+            <h1>ReelFetch - Facebook Reels Downloader</h1>
+            <p class="lead">Easily download your favorite Facebook Reels with just a few clicks.</p>
+            <p>ReelFetch is the ultimate tool to help you save Facebook Reels directly to your device, without any hassle. With our fast and secure service, you can download videos in high or low quality at no cost. Whether you want to save videos for offline viewing or archive your favorite content, ReelFetch makes it simple and quick.</p>
         </div>
 
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
-                    <h5 class="card-title text-center">Enter Facebook Video URL</h5>
+                    <h5 class="card-title text-center">Enter Facebook Reel URL</h5>
                     <div class="form-group">
                         <input type="text" class="form-control" id="url" placeholder="Paste the Facebook reel URL here...">
                     </div>
@@ -52,36 +53,51 @@
                 </div>
             </div>
         </div>
+
         <div class="container mt-4">
-            
             <div id="success-message" class="alert alert-custom-success" role="alert" style="display:none;">
                 <h3 class="text-center mt-4">Ready for download.</h3>
                 <div class="text-center mt-4">
-                    <img src="" alt="Video Thumbnail" id='vidthumbnail'class="thumbnail">
+                    <img src="" alt="Video Thumbnail" id="vidthumbnail" class="thumbnail">
                 </div>
                 <div class="download-buttons">
-                    
                     <a id="vidLowQ" href="" class="btn btn-outline-primary btn-sm">Download Low Quality</a>
-                    
                     <a id="vidHighQ" href="" class="btn btn-primary btn-sm">Download High Quality</a>
-                </div> 
+                </div>
             </div>
-            
-            <div id="error-message" class="alert alert-custom-error" role="alert" style="display:none;">
-                
-            </div>
+
+            <div id="error-message" class="alert alert-custom-error" role="alert" style="display:none;"></div>
         </div>
 
         <div class="download-section text-center">
             <h3>How It Works</h3>
-            <p>Simply paste the Facebook reel URL in the box above and click "Download". The video will be fetched and ready for download.</p>
-            <p><strong>Note:</strong> Ensure that you have the proper permissions to download the content.</p>
+            <p>Simply paste the Facebook reel URL in the box above and click "Download". The video will be fetched and ready for download in seconds. You can choose between high or low-quality downloads based on your preference.</p>
+            <p><strong>Note:</strong> Please ensure that you have the necessary rights to download and use the video content from Facebook Reels.</p>
+        </div>
+
+        <div class="feature-section text-center mt-5">
+            <h3>Why Choose ReelFetch?</h3>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle"></i> Fast and secure downloads</li>
+                <li><i class="fas fa-check-circle"></i> No watermarks on videos</li>
+                <li><i class="fas fa-check-circle"></i> Download in high or low resolution</li>
+                <li><i class="fas fa-check-circle"></i> 100% free to use</li>
+                <li><i class="fas fa-check-circle"></i> Easy-to-use interface</li>
+            </ul>
+        </div>
+
+        <div class="faq-section text-center mt-5">
+            <h3>Frequently Asked Questions</h3>
+            <p><strong>Is ReelFetch free to use?</strong> Yes, ReelFetch is completely free for all users.</p>
+            <p><strong>Can I download videos from private Facebook accounts?</strong> No, ReelFetch only supports public Facebook videos and Reels.</p>
+            <p><strong>Are there any limits on the number of videos I can download?</strong> No, you can download as many Reels as you want without any restrictions.</p>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 ReelFetch Inc. | <a href="policy.html">Privacy Policy</a>| <a href="terms.html">Terms of Service</a></p>
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 ReelFetch Inc. | <a href="policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
+
     <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
